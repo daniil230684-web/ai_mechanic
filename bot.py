@@ -210,7 +210,7 @@ async def chat_with_ai_mechanic(message: types.Message, state: FSMContext):
             "Content-Type": "application/json"
         }
         data = {
-            "model": "meta-llama/llama-3-8b-instruct:free",
+            "model": "meta-llama/llama-3.1-8b-instruct:free",
             "messages": [
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": car_info}
