@@ -210,7 +210,7 @@ async def chat_with_ai_mechanic(message: types.Message, state: FSMContext):
             "Content-Type": "application/json"
         }
         data = {
-            "model": "qwen/qwen-2.5-7b-instruct:free",
+            "model": "openai/gpt-oss-120b:free",
             "messages": [
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": car_info}
